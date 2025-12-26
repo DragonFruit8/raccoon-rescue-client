@@ -8,6 +8,7 @@ import TranportPage from './components/pages/TranportPage';
 import TreatmentPage from './components/pages/TreatmentPage';
 import HistoryPage from './components/pages/HistoryPage';
 import SettingsPage from './components/pages/SettingsPage';
+import NotFound from './components/pages/NotFound';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Treatment' element={<TreatmentPage />} />
           <Route path='/History' element={<HistoryPage />} />
           <Route path='/Settings' element={<SettingsPage />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
     </>
